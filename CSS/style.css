@@ -8,7 +8,7 @@ body {
     background-color: #e6e6e6;
     color: #555;
     line-height: 1.6;
-    text-align: center; /* CENTRA TODO EL TEXTO */
+    text-align: center; /* TODO centrado */
 }
 
 /* ===============================
@@ -21,9 +21,9 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center; /* CENTRA HORIZONTAL */
-    text-align: center;       /* CENTRA TEXTO */
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    text-align: center;
 }
 
 .hero-contenido {
@@ -34,6 +34,7 @@ body {
 .hero h1 {
     font-weight: 300;
     font-size: 2.8rem;
+    line-height: 1.3;
 }
 
 /* ===============================
@@ -43,7 +44,7 @@ body {
 .contenedor {
     background-color: white;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto;   /* Centrado */
     padding: 60px;
 }
 
@@ -81,7 +82,8 @@ h3 {
 
 img {
     width: 100%;
-    margin: 25px 0;
+    margin: 25px auto;
+    display: block;
 }
 
 /* ===============================
@@ -104,6 +106,11 @@ th {
 td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
+}
+
+td img {
+    width: 70px;
+    border-radius: 50%;
 }
 
 /* ===============================
