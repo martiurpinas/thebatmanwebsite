@@ -8,6 +8,7 @@ body {
     background-color: #e6e6e6;
     color: #555;
     line-height: 1.6;
+    text-align: center; /* CENTRA TODO EL TEXTO */
 }
 
 /* ===============================
@@ -21,11 +22,12 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center; /* CENTRA HORIZONTAL */
+    text-align: center;       /* CENTRA TEXTO */
 }
 
 .hero-contenido {
-    width: 60%;
-    margin-left: 10%;
+    width: 70%;
     color: white;
 }
 
@@ -102,12 +104,6 @@ th {
 td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-td img {
-    width: 70px;
-    border-radius: 50%;
 }
 
 /* ===============================
@@ -115,10 +111,6 @@ td img {
 ================================ */
 
 @media (max-width: 900px) {
-
-    .hero-contenido {
-        width: 80%;
-    }
 
     .hero h1 {
         font-size: 1.8rem;
