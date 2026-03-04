@@ -1,0 +1,114 @@
+/* -------------------------
+   ESTILOS GENERALES
+-------------------------- */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* -------------------------
+   CABECERA 100% PANTALLA
+-------------------------- */
+
+.cabecera {
+    background-image: url("../img/cabecera.jpg");
+    background-size: cover;          /* La imagen cubre toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;                   /* 100% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cabecera h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.cabecera p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* -------------------------
+   SECCIONES
+-------------------------- */
+
+main {
+    padding: 60px 10%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* -------------------------
+   TABLA REPARTO
+-------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #1c1c1c;
+    font-size: 1.2rem;
+}
+
+td img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* -------------------------
+   MEDIA QUERY
+   Punto de corte para pantallas pequeñas
+-------------------------- */
+
+@media (max-width: 768px) {
+
+    .cabecera h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecera p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p, th, td {
+        font-size: 0.9rem;
+    }
+
+}
