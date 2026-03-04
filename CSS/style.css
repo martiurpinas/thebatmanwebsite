@@ -1,75 +1,90 @@
-/* =====================
+/* ===============================
    ESTILOS GENERALES
-===================== */
+================================ */
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #e6e6e6;
-    color: #333;
+    color: #555;
+    line-height: 1.6;
 }
 
-/* =====================
-   CABECERA 100% PANTALLA
-===================== */
+/* ===============================
+   HERO 100% PANTALLA
+================================ */
 
 .hero {
     background-image: url("../img/cabecera.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* 100% pantalla */
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
 }
 
-.hero-texto {
-    max-width: 800px;
+.hero-contenido {
+    width: 60%;
+    margin-left: 10%;
+    color: white;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 2.8rem;
 }
 
-.hero p {
-    font-size: 1.5rem;
-}
+/* ===============================
+   CONTENEDOR PRINCIPAL
+================================ */
 
-/* =====================
-   CONTENIDO
-===================== */
-
-main {
+.contenedor {
     background-color: white;
-    padding: 60px 15%;
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px;
 }
 
-h2, h3 {
-    font-family: 'Playfair Display', serif;
+/* ===============================
+   TIPOGRAFÍA
+================================ */
+
+h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    font-weight: 500;
+    color: #333;
+    margin-top: 40px;
+}
+
+.spoilers {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
 }
 
 .destacado {
-    color: #c40000;
-    font-weight: bold;
+    color: #e63946;
+    font-weight: 600;
 }
 
-section {
-    margin-bottom: 60px;
-}
+/* ===============================
+   IMÁGENES
+================================ */
 
 img {
     width: 100%;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-/* =====================
+/* ===============================
    TABLA
-===================== */
+================================ */
 
 table {
     width: 100%;
@@ -78,42 +93,43 @@ table {
 }
 
 th {
-    background-color: #111;
+    background-color: #222;
     color: white;
     padding: 15px;
+    font-weight: 400;
 }
 
 td {
     padding: 15px;
+    border-bottom: 1px solid #ddd;
     text-align: center;
-    border-bottom: 1px solid #ccc;
 }
 
 td img {
-    width: 80px;
+    width: 70px;
     border-radius: 50%;
 }
 
-/* =====================
+/* ===============================
    MEDIA QUERY
-===================== */
+================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+
+    .hero-contenido {
+        width: 80%;
+    }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .hero p {
-        font-size: 1rem;
-    }
-
-    main {
-        padding: 30px 5%;
+    .contenedor {
+        width: 90%;
+        padding: 30px;
     }
 
     p, td, th {
         font-size: 0.9rem;
     }
-
 }
