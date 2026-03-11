@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- CARRUSEL -->
+    <!-- CARRUSEL MÁS PEQUEÑO -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -21,9 +21,9 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./imagenes/header_background.jpeg" class="d-block w-100" alt="The Batman fondo 1">
+                <img src="./imagenes/header_background.jpeg" class="d-block w-100" alt="The Batman fondo">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>'The Batman': la misteriosa escena post-créditos de la película de Matt Reeves esconde un nuevo enigma para los fans</h1>
+                    <h1 class="texto-blanco">'The Batman': la misteriosa escena post-créditos de la película de Matt Reeves esconde un nuevo enigma para los fans</h1>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./imagenes/" class="d-block w-100" alt="The Batman fondo 3">
+                <img src="./imagenes/MV5BNzk0MDQ5OTUxMV5BMl5BanBnXkFtZTcwMDM5ODk5Mg@@._V1_FMjpg_UX1000_.jpg" class="d-block w-100" alt="The Batman fondo 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>'The Batman': la misteriosa escena post-créditos de la película de Matt Reeves esconde un nuevo enigma para los fans</h1>
                 </div>
@@ -55,7 +55,8 @@
         <section>
             <h2>The Batman:</h2>
             <p><span class="destacado">'The Batman'</span>, la nueva película de Matt Reeves ofrece una versión nueva y más oscura del icónico superhéroe de DC en la que Robert Pattinson hace de un aún joven Bruce Wayne que ayuda a Jim Gordon (Jeffrey Wright) a resolver una serie de asesinatos en Ciudad Gótica a través de muchos acertijos para resolver el plan de Enigma, pero ¿Tiene escena post créditos la película?</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IqRRLA6pZvo" allowfullscreen></iframe>
+            <!-- Trailer -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IqRRLA6pZvo" frameborder="0" allowfullscreen></iframe>
         </section>
 
         <!-- APARTADO 1 -->
@@ -69,9 +70,9 @@
         <section>
             <h4 class="spoilers">SPOILERS DE LA ESCENA POST-CRÉDITOS DE THE BATMAN</h4>
             <p>En primer lugar aparece solamente una línea de conversación que dice: <strong>GOOD BYE</strong>, como si fuera una conversación de chat con Enigma.</p>
-            <img src="https://picsum.photos/id/20/700/400" alt="GOOD BYE mensaje en chat">
+            <img src="./imagenes/img_1.jpeg" alt="GOOD BYE mensaje en chat">
             <p>Si prestamos atención a la pantalla hay un pequeño flash que nos deja ver una imagen casi subliminal que nos muestra una web.</p>
-            <img src="https://picsum.photos/id/21/700/400" alt="Web rataalada">
+            <img src="./imagenes/img_2.jpeg" alt="Web rataalada">
         </section>
 
         <!-- JUEGO -->
@@ -79,40 +80,37 @@
             <h3>Un juego con recompensa:</h3>
             <p>Lo divertido es que si vamos a la web www.rataalada.com nos encontramos con el chat que propone varios acertijos.</p>
             <p>La web tiene varios acertijos que nos pregunta un misterioso personaje que se supone que es el villano de la película.</p>
-            <img src="https://picsum.photos/id/22/700/400" alt="Web rataalada acertijos">
+            <img src="./imagenes/img_3.jpeg" alt="Web rataalada acertijos">
         </section>
 
-        <!-- TABLA DEL REPARTO -->
+        <!-- TABLA NORMAL CON LOS PERSONAJES (SIN OCUPAR ESPACIO EXTRA) -->
         <section id="cast">
-            <h2>Tabla del reparto de los personajes:</h2>
-            <table>
+            <h2>Reparto de la película</h2>
+            <table class="tabla-reparto">
                 <tr>
-                    <td colspan="3" style="text-align:center; font-weight:bold;">The Batman: Reparto de la pelicula</td>
-                </tr>
-                <tr>
-                    <th>Personaje:</th>
-                    <th>Actor/Actriz:</th>
-                    <th>Imagen:</th>
+                    <th>Personaje</th>
+                    <th>Actor/Actriz</th>
+                    <th>Imagen</th>
                 </tr>
                 <tr>
                     <td>Bruce Wayne / Batman</td>
                     <td>Robert Pattinson</td>
-                    <td><img src="https://picsum.photos/id/100/150/150" alt="Batman"></td>
+                    <td><img src="./imagenes/MV5BNzk0MDQ5OTUxMV5BMl5BanBnXkFtZTcwMDM5ODk5Mg@@._V1_FMjpg_UX1000_.jpg" alt="Batman"></td>
                 </tr>
                 <tr>
                     <td>Jim Gordon</td>
                     <td>Jeffrey Wright</td>
-                    <td><img src="https://picsum.photos/id/101/150/150" alt="Jim Gordon"></td>
+                    <td><img src="./imagenes/MV5BMTg4NzM5NDk0MV5BMl5BanBnXkFtZTcwNzAzMTUxNw@@._V1_.jpg" alt="Jim Gordon"></td>
                 </tr>
                 <tr>
                     <td>Enigma</td>
                     <td>Paul Dano</td>
-                    <td><img src="https://picsum.photos/id/102/150/150" alt="Enigma"></td>
+                    <td><img src="./imagenes/MV5BMjMwMzE1OTc0OF5BMl5BanBnXkFtZTcwMDU2NTg0Nw@@._V1_.jpg" alt="Enigma"></td>
                 </tr>
                 <tr>
                     <td>Catwoman</td>
                     <td>Zöe Kravitz</td>
-                    <td><img src="https://picsum.photos/id/103/150/150" alt="Catwoman"></td>
+                    <td><img src="./imagenes/zoe-kravitz-quien-pareja-harry-styles.jpg" alt="Catwoman"></td>
                 </tr>
             </table>
         </section>
