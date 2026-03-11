@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== CONTENEDOR PRINCIPAL (CENTRADO) ===== */
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor {
     max-width: 1000px;
     width: 90%;
@@ -46,7 +46,6 @@ body {
     background: rgba(0, 0, 0, 0.6);
     padding: 8px;
     border-radius: 8px;
-    color: #fff;
     left: 5%;
     right: 5%;
     bottom: 10px;
@@ -55,12 +54,10 @@ body {
 .carousel-caption h1 {
     font-size: 0.9rem;
     font-weight: 600;
-    letter-spacing: 0.3px;
     margin: 0;
     color: #fff;
 }
 
-/* Texto blanco específicamente para la primera imagen */
 .texto-blanco {
     color: #ffffff !important;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
@@ -93,7 +90,6 @@ h4.spoilers {
     padding: 8px 20px;
     border-radius: 40px;
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
     display: inline-block;
     margin: 20px auto;
     box-shadow: 0 3px 6px rgba(220,53,69,0.3);
@@ -114,13 +110,6 @@ p {
     font-size: 1.1rem;
 }
 
-.nota-tabla {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 5px;
-    font-style: italic;
-}
-
 /* ===== IMÁGENES GENERALES ===== */
 img {
     display: block;
@@ -131,7 +120,6 @@ img {
     box-shadow: 0 5px 12px rgba(0,0,0,0.1);
 }
 
-/* Estilos específicos para imágenes de la web rataalada */
 img[alt*="rataalada"], 
 img[alt*="GOOD BYE"],
 img[alt*="Web rataalada"],
@@ -143,7 +131,7 @@ img[src*="img_3.jpeg"] {
     max-width: 600px;
 }
 
-/* ===== IFRAME (TRAILER) ===== */
+/* ===== IFRAME ===== */
 iframe {
     display: block;
     margin: 20px auto;
@@ -155,58 +143,52 @@ iframe {
     height: 280px;
 }
 
-/* ===== TABLA PEQUEÑA - LA MÁS PEQUEÑA POSIBLE ===== */
+/* ===== 🔥 TABLA ENANA DE COJONES - AHORA SÍ QUE ES PEQUEÑA 🔥 ===== */
 .tabla-pequena {
     width: auto;
     max-width: 100%;
-    margin: 10px auto;
+    margin: 5px auto;
     border-collapse: collapse;
     background: white;
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    font-size: 0.7rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    font-size: 0.55rem !important;  /* TEXTO MICROSCÓPICO */
 }
 
 .tabla-pequena th,
 .tabla-pequena td {
-    padding: 4px 6px;
+    padding: 2px 3px !important;    /* PADDING MÍNIMO */
     text-align: center;
     vertical-align: middle;
     border-bottom: 1px solid #eee;
+    line-height: 1.2;
 }
 
 .tabla-pequena th {
     background-color: #0d6efd;
     color: white;
     font-weight: 600;
-    font-size: 0.75rem;
-    padding: 5px 6px;
+    font-size: 0.6rem !important;   /* CABECERA PEQUEÑÍSIMA */
+    padding: 3px 3px !important;
 }
 
 .tabla-pequena tr:last-child td {
     border-bottom: none;
 }
 
-/* Filas alternadas para mejor legibilidad */
-.tabla-pequena tr:nth-child(even) {
-    background-color: #f8f9fa;
-}
-
-/* Imágenes dentro de la tabla - TAMAÑO PEQUEÑO */
 .tabla-pequena td img {
-    width: 40px;
-    height: 40px;
+    width: 20px !important;          /* FOTOS MINÚSCULAS - 20px */
+    height: 20px !important;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     margin: 0;
-    transition: transform 0.2s;
+    transition: transform 0.1s;
 }
 
 .tabla-pequena td img:hover {
-    transform: scale(1.2);
-    border: 2px solid #0d6efd;
+    transform: scale(1.3);
 }
 
 /* ===== SECCIONES ===== */
@@ -225,7 +207,7 @@ section {
     align-items: center;
 }
 
-/* ===== RESPONSIVE - MÓVILES ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     #carouselExampleDark {
         max-width: 90%;
@@ -246,17 +228,16 @@ section {
     }
     
     .tabla-pequena {
-        font-size: 0.65rem;
+        font-size: 0.5rem !important;
     }
     
-    .tabla-pequena th,
-    .tabla-pequena td {
-        padding: 3px 4px;
+    .tabla-pequena th {
+        font-size: 0.55rem !important;
     }
     
     .tabla-pequena td img {
-        width: 30px;
-        height: 30px;
+        width: 16px !important;
+        height: 16px !important;
     }
 }
 
@@ -271,33 +252,20 @@ section {
     }
     
     .tabla-pequena {
-        font-size: 0.6rem;
-    }
-    
-    .tabla-pequena th,
-    .tabla-pequena td {
-        padding: 2px 3px;
-    }
-    
-    .tabla-pequena td img {
-        width: 25px;
-        height: 25px;
+        font-size: 0.45rem !important;
     }
     
     .tabla-pequena th {
-        font-size: 0.65rem;
-        padding: 3px 3px;
+        font-size: 0.5rem !important;
+        padding: 2px 2px !important;
     }
-}
-
-/* ===== VERSIÓN EXTRA PEQUEÑA PARA ESCRITORIO (OPCIONAL) ===== */
-@media (min-width: 1200px) {
-    .tabla-pequena {
-        font-size: 0.65rem;
+    
+    .tabla-pequena td {
+        padding: 1px 2px !important;
     }
     
     .tabla-pequena td img {
-        width: 35px;
-        height: 35px;
+        width: 14px !important;
+        height: 14px !important;
     }
 }
