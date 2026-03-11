@@ -27,10 +27,10 @@ body {
     align-items: center;
 }
 
-/* ===== CARRUSEL ===== */
+/* ===== CARRUSEL CON FOTOS MÁS PEQUEÑAS ===== */
 #carouselExampleDark {
     width: 100%;
-    max-width: 1000px;
+    max-width: 600px;  /* Reducido a la mitad del tamaño anterior (1000px → 600px) */
     margin: 20px auto;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -39,25 +39,30 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 450px;
+    max-height: 270px;  /* Proporcional a la reducción (450px * 0.6 ≈ 270px) */
 }
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 10px;  /* Reducido ligeramente */
     border-radius: 12px;
     color: #fff;
     left: 5%;
     right: 5%;
-    bottom: 20px;
+    bottom: 15px;
 }
 
 .carousel-caption h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;  /* Reducido proporcionalmente */
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin: 0;
-    color: #fff;
+}
+
+/* Texto blanco específicamente para la primera imagen */
+.texto-blanco {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para mejor legibilidad */
 }
 
 /* ===== TIPOGRAFÍA ===== */
@@ -202,8 +207,12 @@ section {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+    #carouselExampleDark {
+        max-width: 90%;  /* En móviles ocupa el 90% del ancho */
+    }
+    
     .carousel-caption h1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     
     h2 {
@@ -236,5 +245,9 @@ section {
     
     h3 {
         font-size: 1.3rem;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 0.8rem;
     }
 }
