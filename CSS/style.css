@@ -1,126 +1,208 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-font-family:'Montserrat', sans-serif;
-background:#dcdcdc;
-color:#444;
-line-height:1.6;
-
-/* CENTRAR TODO EL CONTENIDO */
-display:flex;
-flex-direction:column;
-align-items:center;
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* HERO */
-
-.hero{
-width:100%;
-height:650px;
-
-background-image:url("img/batman.jpg");
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-text-align:center;
-padding:40px;
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
 }
 
-.hero h1{
-color:white;
-font-size:42px;
-font-weight:300;
-max-width:800px;
+.hero-contenido {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-
-/* CONTENIDO */
-
-.container{
-
-max-width:850px;
-background:white;
-padding:40px;
-margin-top:-20px;
-
-/* centrar contenido */
-text-align:center;
-
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
-
-/* TITULOS */
-
-h2{
-font-size:30px;
-margin-bottom:20px;
+/* Contenedor principal */
+.contenedor {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h3{
-margin-top:30px;
-margin-bottom:15px;
+/* Secciones */
+section {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h4{
-margin-top:30px;
-margin-bottom:15px;
-letter-spacing:2px;
+h2, h3, h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
 
-
-/* TEXTO */
-
-p{
-margin-bottom:20px;
-color:#666;
-
-/* texto justificado */
-text-align:justify;
+h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
 }
 
-.red{
-color:#ff4a4a;
+h3 {
+    font-size: 1.5rem;
+    color: #333;
 }
 
-
-/* VIDEO */
-
-.video{
-display:flex;
-justify-content:center;
-margin:30px 0;
+h4 {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-.video iframe{
-width:100%;
-max-width:700px;
-height:400px;
-border:none;
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 700px;
 }
 
-
-/* IMAGENES */
-
-.article-img{
-display:block;
-margin:30px auto;
-max-width:700px;
-width:100%;
+.destacado {
+    font-weight: 600;
+    color: #e63946;
 }
 
+/* Iframe */
+iframe {
+    max-width: 100%;
+    height: auto;
+    min-height: 315px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin: 20px 0;
+}
 
-/* FOOTER */
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px 0;
+}
 
-footer{
-text-align:center;
-padding:30px;
-color:#888;
+/* Spoilers */
+.spoilers {
+    color: #e63946;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    td img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 6px;
+    }
+    
+    td img {
+        width: 60px;
+    }
 }
